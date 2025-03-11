@@ -44,19 +44,14 @@ MyResult is an online result management system designed to provide worldwide acc
     CREATE DATABASE srms;
     ```
 
-4. **Import the database schema:**
+4. **Import the database schema to srsm using PhpMyAdmin panel of wamp server:**
     ```sh
-    mysql -u username -p some_password < database/srms.sql
+    mysql -u username -p some_password < database/v1/srms.sql
     ```
 
 5. **Configure the database connection:**
     Update the `srms.php` file with your database credentials.
-    ```php
-    define('DB_SERVER', 'localhost');
-    define('DB_USERNAME', 'some username');
-    define('DB_PASSWORD', 'some password');
-    define('DB_NAME', 'some database');
-    ```
+
 
 6. **Start the wamp server, Then open your browser and navigate to:**
     ```

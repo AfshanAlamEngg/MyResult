@@ -4,7 +4,7 @@
 
 class srms
 {
-	public $base_url = 'http://localhost/tutorial/srms/';
+	public $base_url = 'http://localhost/MyResult/';
 	public $connect;
 	public $query;
 	public $statement;
