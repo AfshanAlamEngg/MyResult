@@ -1,14 +1,14 @@
 # MyResult - Online Result Management System
 
 ## Table of Contents
-- Introduction
-- Features
-- Requirements
-- Installation
-- Usage
-- Contributing
-- License
-- Contact
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Introduction
 MyResult is an online result management system designed to provide worldwide access to examination results. This web application allows multiple students or candidates to view their results simultaneously, eliminating the need to wait for results to be posted on notice boards at organizations, schools, or colleges. Administrators and authorized staff members have the privileges to add, modify, and delete results and student records. Additionally, administrators can manage staff members, including adding, modifying, deleting, and assigning roles to them. Students can select their exam and enter their specific ID to view their results.
@@ -29,17 +29,15 @@ MyResult is an online result management system designed to provide worldwide acc
 ## Installation
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/myresult.git
-    cd myresult
+    git clone https://github.com/AfshanAlamEngg/MyResult.git
+    cd MyResult
     ```
 
-2. **Place the clone folder in the www folder of wamp server name it as tutorial**
+2. **Place the clone folder in the www folder of wamp server**
     ```sh
-    cd wamp
+    cd wamp or wamp64
     cd www
-    mkdir tutorial
     ```
-    Paste your code in the above folder
 
 3. **Create a MySQL database:**
     ```sql
@@ -52,23 +50,27 @@ MyResult is an online result management system designed to provide worldwide acc
     ```
 
 5. **Configure the database connection:**
-    Update the `config.php` file with your database credentials.
+    Update the `srms.php` file with your database credentials.
     ```php
     define('DB_SERVER', 'localhost');
-    define('DB_USERNAME', 'root');
-    define('DB_PASSWORD', '');
-    define('DB_NAME', 'srms');
+    define('DB_USERNAME', 'some username');
+    define('DB_PASSWORD', 'some password');
+    define('DB_NAME', 'some database');
     ```
 
-6. **Start the web server:**
-    ```sh
-    php -S localhost:8000
+6. **Start the wamp server, Then open your browser and navigate to:**
+    ```
+    http://localhost/MyResult
     ```
 
-7. **Open your browser and navigate to:**
-    ```
-    http://localhost:8000
-    ```
+## Note: Final Result - End User Side
+The homepage for end user would be similar to the below image
+![alt text](image.png)
+
+## Note: Final Result - Admin Side
+The homepage for the admin side would be similar to the below image
+![alt text](image-1.png)
+
 
 ## Usage
 - **View results:** Students can select their exam and enter their specific ID to view their results.
@@ -84,5 +86,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 For any questions or suggestions, feel free to reach out:
-- **Email:** yourname@example.com
-- **GitHub:** yourusername
+- **Email:** afshanalamengg@gmail.com
+- **GitHub:** [AfshanAlamEngg](https://github.com/AfshanAlamEngg)
