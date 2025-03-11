@@ -1,4 +1,4 @@
-# MyResult - Online Result Management System
+# MyResult
 
 ## Table of Contents
 - [Introduction](#introduction)
